@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Mack - Feel the Music</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                <span>Music Mack</span>
+            </div>
+            <!-- <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search for songs, artists...">
+                <div class="search-icon">🔍</div>
+            </div> -->
+            <ul class="nav-links">
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#" class="nav-link">Library</a></li>
+                <li><a href="#" class="nav-link">Playlists</a></li>
+                <li><a href="#" class="nav-link">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Music Mack</h1>
+            <button class="cta-button" onclick="window.location.href='index.html?mood=chill'">Welcome . Click Here</button>
+        </div>
+        <div class="particles"></div>
+    </section>
+
+    <!-- Mood Section -->
+    <section class="moods-section">
+        <h2 class="section-title">Mood Playlists</h2>
+        <div class="moods-grid">
+            <div class="mood-card" data-mood="happy" onclick="window.location.href='index.html?mood=happy'">
+                <div class="card-bg happy"></div>
+                <div class="card-content">
+                    <h3>Happy</h3>
+                    <p>Upbeat vibes</p>
+                </div>
+            </div>
+            <div class="mood-card" data-mood="sad" onclick="window.location.href='index.html?mood=sad'">
+                <div class="card-bg sad"></div>
+                <div class="card-content">
+                    <h3>Sad</h3>
+                    <p>Emotional ballads</p>
+                </div>
+            </div>
+            <div class="mood-card" data-mood="chill" onclick="window.location.href='index.html?mood=chill'">
+                <div class="card-bg chill"></div>
+                <div class="card-content">
+                    <h3>Chill</h3>
+                    <p>Relax & unwind</p>
+                </div>
+            </div>
+            <div class="mood-card" data-mood="party" onclick="window.location.href='index.html?mood=party'">
+                <div class="card-bg party"></div>
+                <div class="card-content">
+                    <h3>Party</h3>
+                    <p>Turn it up</p>
+                </div>
+            </div>
+            <div class="mood-card" data-mood="focus" onclick="window.location.href='index.html?mood=focus'">
+                <div class="card-bg focus"></div>
+                <div class="card-content">
+                    <h3>Focus</h3>
+                    <p>Deep work</p>
+                </div>
+            </div>
+            <div class="mood-card" data-mood="romantic" onclick="window.location.href='index.html?mood=romantic'">
+                <div class="card-bg romantic"></div>
+                <div class="card-content">
+                    <h3>Romantic</h3>
+                    <p>Love songs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playlist Section -->
+    <section class="playlists-section">
+        <h2 class="section-title">Featured Playlists</h2>
+        <div class="playlists-grid">
+            <div class="playlist-card">
+                <div class="album-art"></div>
+                <div class="playlist-overlay">
+                    <button class="play-btn">▶</button>
+                </div>
+                <div class="playlist-info">
+                    <h3>Today's Top Hits</h3>
+                    <p>Pop • 32 songs</p>
+                </div>
+            </div>
+            <div class="playlist-card">
+                <div class="album-art alt1"></div>
+                <div class="playlist-overlay">
+                    <button class="play-btn">▶</button>
+                </div>
+                <div class="playlist-info">
+                    <h3>Chill Vibes</h3>
+                    <p>Lo-fi • 25 songs</p>
+                </div>
+            </div>
+            <div class="playlist-card">
+                <div class="album-art alt2"></div>
+                <div class="playlist-overlay">
+                    <button class="play-btn">▶</button>
+                </div>
+                <div class="playlist-info">
+                    <h3>Workout Beats</h3>
+                    <p>EDM • 40 songs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Player -->
+    <div class="music-player">
+        <div class="player-left">
+            <img src="https://via.placeholder.com/50x50/FF6B6B/000000?text=♪" alt="Current song" class="now-playing-art">
+            <div class="track-info">
+                <span class="track-title">Blinding Lights</span>
+                <span class="track-artist">The Weeknd</span>
+            </div>
+        </div>
+        <div class="player-controls">
+            <button class="control-btn prev">⏮</button>
+            <button class="control-btn play-pause playing">⏸</button>
+            <button class="control-btn next">⏭</button>
+        </div>
+        <div class="player-progress">
+            <span class="current-time">2:15</span>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <span class="duration">3:45</span>
+        </div>
+        <div class="player-right">
+            <button class="control-btn volume">🔊</button>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>
