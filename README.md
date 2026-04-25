@@ -1,5 +1,5 @@
 # MUSIC_MACK
-mood based music recomendation system
+mood based music recomendation system built using springboot
 
 
 The backend in this project (built with Spring Boot and Java) acts as a crucial middle layer between your frontend web application and the external iTunes API.
